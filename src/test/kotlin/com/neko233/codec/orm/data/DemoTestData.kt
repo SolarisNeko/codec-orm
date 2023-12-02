@@ -16,6 +16,7 @@ class DemoTestData : CodecOrmApi {
         {"name": "demo"}
     """.trimIndent()
 
+    // serialize + deserialize
     @DeserializePostOrm(
         fromFieldName = "text",
         factoryClass = UserDeserializeFactoryApi::class
