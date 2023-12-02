@@ -10,6 +10,18 @@
 
 JVM = 1.8+
 
+# 核心 API
+
+1. CodecOrmApi
+   1. SerializePreOrmApi 序列化
+   2. DeserializePostOrmApi 反序列化
+2. 注解:
+    1. @DeserializePostOrm
+    2. @SerializePreOrm
+3. 工厂 API
+   1. DeserializeOrmFactoryApi
+   2. SerializeOrmFactoryApi
+
 # 使用
 
 ## Define Class 定义 Class
