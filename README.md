@@ -47,7 +47,7 @@ class DemoTestData : CodecOrmApi {
         toFieldName = "serializeText",
         factoryClass = UserSerializeFactoryApi::class
     )
-    val user: User? = null
+    var user: User? = null
 
 
     var serializeText: String = ""

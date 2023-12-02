@@ -12,7 +12,7 @@ class DemoTestData : CodecOrmApi {
     /**
      * 反序列化来源的文本
      */
-    val text: String = """
+    var text: String = """
         {"name": "demo"}
     """.trimIndent()
 
@@ -24,7 +24,7 @@ class DemoTestData : CodecOrmApi {
         toFieldName = "serializeText",
         factoryClass = UserSerializeFactoryApi::class
     )
-    val user: User? = null
+    var user: User? = null
 
 
     var serializeText: String = ""
