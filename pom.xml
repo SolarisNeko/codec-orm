@@ -11,8 +11,13 @@
     <url>https://github.com/SolarisNeko/codec-orm/tree/main</url>
 
     <description>
-        codec-orm = JPA + MyBatis ORM + Flyway + ShardingDb(Experimental)
+        codec-orm = Serialize / Deserialize Uni-API to ORM handler!
+        codec-orm not a black box and you can use it easy !
 
+        统一的序列化和反序列化 ORM 处理.
+        兼容任意协议, 如 protobuf/json/avro/..
+        通过生命周期来控制!
+        完全不黑箱!
     </description>
 
     <developers>
