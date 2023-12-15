@@ -5,7 +5,7 @@
 
     <groupId>com.neko233</groupId>
     <artifactId>codec-orm</artifactId>
-    <version>0.0.1</version>
+    <version>0.1.0</version>
 
     <name>codec-orm</name>
     <url>https://github.com/SolarisNeko/codec-orm/tree/main</url>
@@ -61,6 +61,12 @@
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
 
         <!-- Kotlin -->
         <dependency>
@@ -173,10 +179,13 @@
                     </execution>
                 </executions>
                 <configuration>
+                    <jvmTarget>1.8</jvmTarget>
+
                     <compilerPlugins>
                         <plugin>kotlinx-serialization</plugin>
                     </compilerPlugins>
                     <args>
+                        <arg>-Xjvm-default=all</arg>
                         <arg>-Xjsr305=strict</arg>
                     </args>
                     <jvmTarget>${jvmTarget.version}</jvmTarget>

@@ -1,5 +1,6 @@
-package com.neko233.codec.orm.factory
+package com.neko233.codec.orm.api
 
+import com.neko233.codec.orm.SerializeOrmFactoryApi
 import com.neko233.codec.orm.data.User
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json

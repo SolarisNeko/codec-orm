@@ -10,6 +10,19 @@
 
 JVM = 1.8+
 
+## 应用场景
+一般应用在【通信协议层/配置数据层】的 class
+
+对 String/byte[] field 转成你要的 interface/data class
+
+最大的应用在于: 
+1. 提供统一的自定义转换机制, 且可复用
+2. 提供手动触发的 API, 不黑箱
+3. 能够接入 interface/abstract class
+
+这些 class, 一般是稳定的字段名, 改动往往是新开一个协议对象.
+
+
 # 核心 API
 
 1. CodecOrmApi

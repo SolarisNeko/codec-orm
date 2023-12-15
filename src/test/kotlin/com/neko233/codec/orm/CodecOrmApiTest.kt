@@ -1,6 +1,6 @@
 package com.neko233.codec.orm
 
-import com.example.codec.postorm.DemoTestData
+import com.example.codec.postorm.DemoTestDataKt
 import org.junit.Test
 
 /**
@@ -11,19 +11,5 @@ import org.junit.Test
  * */
 class CodecOrmApiTest {
 
-    @Test
-    fun demo() {
-        val data = DemoTestData()
 
-
-        // deserialize
-        data.deserializePostOrm()
-        println(data.user!!.name)
-
-
-        // serialize
-        data.serializePreOrm()
-        println(data.serializeText)
-
-    }
 }
